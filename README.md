@@ -21,7 +21,7 @@
 
 ### 🏠 [Homepage](https://github.com/brunoxd13/events-selector#readme)
 
-## Install
+## Usage
 
 ```sh
 yarn add events-selector
