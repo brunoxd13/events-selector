@@ -13,7 +13,7 @@
     <img alt="License: ISC" src="https://img.shields.io/github/license/brunoxd13/events-selector" />
   </a>
   <a href="https://twitter.com/Bruno\_Russi" target="_blank">
-    <img alt="Twitter: Bruno\_Russi" src="https://img.shields.io/twitter/follow/Bruno\_Russi.svg?style=social" />
+    <img alt="Twitter: Bruno\_Russi" src="https://img.shields.io/twitter/follow/Bruno_Russi.svg?style=social" />
   </a>
 </p>
 
