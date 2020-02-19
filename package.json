@@ -1,0 +1,19 @@
+{
+  "name": "events-selector",
+  "version": "1.0.0",
+  "description": "Interface to select events based on probability and statistics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoxd13/events-selector.git"
+  },
+  "author": "Bruno Russi Lautenschlager",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoxd13/events-selector/issues"
+  },
+  "homepage": "https://github.com/brunoxd13/events-selector#readme"
+}
