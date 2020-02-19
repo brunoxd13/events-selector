@@ -10,7 +10,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/brunoxd13/events-selector/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/brunoxd13/events-selector" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/brunoxd13/events-selector" />
   </a>
   <a href="https://twitter.com/Bruno\_Russi" target="_blank">
     <img alt="Twitter: Bruno\_Russi" src="https://img.shields.io/twitter/follow/Bruno_Russi.svg?style=social" />
@@ -47,4 +47,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2020 [Bruno Russi Lautenschlager](https://github.com/brunoxd13).<br />
-This project is [ISC](https://github.com/brunoxd13/events-selector/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/brunoxd13/events-selector/blob/master/LICENSE) licensed.
