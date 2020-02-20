@@ -74,7 +74,7 @@ class EventsSelector {
   processEvent() {
     const selectedEvent = this._selectEvent();
 
-    if (selectedEvent.maximumOccurrences) {
+    if ("maximumOccurrences" in selectedEvent) {
       const currentEvent = this._findEventInList(
         this.occurredEvents,
         selectedEvent
@@ -88,12 +88,18 @@ class EventsSelector {
             this.occurredEvents,
             currentEvent
           );
+
           this.occurredEvents.push(currentEvent);
+
           return [currentEvent, this.occurredEvents];
         }
 
         return this.processEvent(this.occurredEvents);
       } else {
+        if (selectedEvent.maximumOccurrences <= 0) {
+          return this.processEvent(this.occurredEvents);
+        }
+
         selectedEvent.maximumOccurrences = selectedEvent.maximumOccurrences - 1;
       }
     }
