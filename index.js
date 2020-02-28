@@ -81,10 +81,7 @@ class EventsSelector {
 
       if (currentEvent) {
         if (currentEvent.maximumOccurrences > 0) {
-          currentEvent = {
-            ...currentEvent,
-            maximumOccurrences: currentEvent.maximumOccurrences - 1
-          };
+          currentEvent.maximumOccurrences -= 1;
 
           this.occurredEvents = this._removeEventFromList(
             this.occurredEvents,
@@ -97,16 +94,13 @@ class EventsSelector {
         }
 
         return this.processEvent(this.occurredEvents);
-      } else {
-        if (selectedEvent.maximumOccurrences <= 0) {
-          return this.processEvent(this.occurredEvents);
-        }
-
-        selectedEvent = {
-          ...selectedEvent,
-          maximumOccurrences: selectedEvent.maximumOccurrences - 1
-        };
       }
+
+      if (selectedEvent.maximumOccurrences <= 0) {
+        return this.processEvent(this.occurredEvents);
+      }
+
+      selectedEvent.maximumOccurrences -= 1;
     }
 
     this.occurredEvents.push(selectedEvent);
