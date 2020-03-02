@@ -1,10 +1,15 @@
 class EventsSelector {
-  constructor(normalEvents, unusualEvents, probabilityOfUnusualEvents = 25) {
+  constructor(
+    normalEvents,
+    unusualEvents,
+    probabilityOfUnusualEvents = 25,
+    occurredEvents = []
+  ) {
     this.normalEvents = normalEvents;
     this.unusualEvents = unusualEvents;
     this.probabilityOfUnusualEvents = probabilityOfUnusualEvents;
 
-    this.occurredEvents = [];
+    this.occurredEvents = occurredEvents;
   }
 
   _getRandom(max) {
@@ -61,6 +66,10 @@ class EventsSelector {
 
   cleanOccurredEvents() {
     this.occurredEvents = [];
+  }
+
+  setOccurredEvents(occurredEvents) {
+    this.occurredEvents = occurredEvents;
   }
 
   reset() {
