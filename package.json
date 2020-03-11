@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brunoxd13/events-selector/issues"
   },
-  "homepage": "https://github.com/brunoxd13/events-selector#readme"
+  "homepage": "https://github.com/brunoxd13/events-selector#readme",
+  "dependencies": {
+    "chance": "^1.1.4"
+  }
 }

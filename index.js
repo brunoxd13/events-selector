@@ -1,3 +1,5 @@
+const Chance = require("chance");
+
 class EventsSelector {
   constructor(
     normalEvents,
@@ -13,7 +15,7 @@ class EventsSelector {
   }
 
   _getRandom(max) {
-    return Math.floor(Math.random() * max);
+    return Chance().integer({ min: 0, max });
   }
 
   _generateProbability(events) {
@@ -40,7 +42,7 @@ class EventsSelector {
 
     events = this._generateProbability(events);
 
-    const selectedEventIndex = this._getRandom(events.length);
+    const selectedEventIndex = this._getRandom(events.length - 1);
     return events[selectedEventIndex];
   }
 
@@ -117,4 +119,4 @@ class EventsSelector {
   }
 }
 
-export default EventsSelector;
+module.exports = EventsSelector;
