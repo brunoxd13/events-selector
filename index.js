@@ -82,10 +82,10 @@ class EventsSelector {
   }
 
   processEvent() {
-    const selectedEvent = this._selectEvent();
+    let selectedEvent = this._selectEvent();
 
     if ("maximumOccurrences" in selectedEvent) {
-      const currentEvent = this._findEventInList(
+      let currentEvent = this._findEventInList(
         this.occurredEvents,
         selectedEvent
       );
