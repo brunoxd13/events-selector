@@ -92,7 +92,10 @@ class EventsSelector {
 
       if (currentEvent) {
         if (currentEvent.maximumOccurrences > 0) {
-          currentEvent.maximumOccurrences -= 1;
+          currentEvent = {
+            ...currentEvent,
+            maximumOccurrences: currentEvent.maximumOccurrences - 1
+          };
 
           this.occurredEvents = this._removeEventFromList(
             this.occurredEvents,
@@ -111,7 +114,10 @@ class EventsSelector {
         return this.processEvent(this.occurredEvents);
       }
 
-      selectedEvent.maximumOccurrences -= 1;
+      selectedEvent = {
+        ...selectedEvent,
+        maximumOccurrences: selectedEvent.maximumOccurrences - 1
+      };
     }
 
     this.occurredEvents.push(selectedEvent);
